@@ -1,5 +1,7 @@
 package com.br.lab;
 
+import com.br.lab.utils.StringUtils;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -9,7 +11,7 @@ public class Lambda {
 
     public static void main (String[] args){
 
-        List<String> values = getValues();
+        List<String> values = StringUtils.getValues();
         lambdaIteration(values);
         System.out.println(values);
 
@@ -26,14 +28,4 @@ public class Lambda {
             System.out.println(value);
         }
     }
-
-    private static List<String> getValues(){
-        List<String> values = new ArrayList<String>();
-        values.add("Black Lab");
-        values.add("Yellow Lab");
-        values.add("Brown Lab");
-        values.add("Some other dog");
-        return values;
-    }
-
 }
