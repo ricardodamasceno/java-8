@@ -11,8 +11,8 @@ public class UserUtils {
 
         List<User> users = new ArrayList<User>();
 
-        for(int i = 0; i < 3; i++){
-            User user = new User("User - ".concat(Integer.toString(i)), "Email - ".concat(Integer.toString(i)));
+        for(int i = 0; i < 10; i++){
+            User user = new User("User - ".concat(Integer.toString(i)), "Email - ".concat(Integer.toString(i)), i);
             users.add(user);
         }
         return users;
